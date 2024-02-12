@@ -48,10 +48,16 @@
         </div>
     </nav>
     <br>
-    <div class="container my-auto">
-        <div class="mb-3">
-            <label for="addressField" class="form-labal">Katuosoite</label>
-            <input type="text" class="form-control" id="addressField" placeholder="Kirjoita osoite">
+    <div class="container">
+        <div class="inputArea">
+            <div class="mb-3 w-50">
+                <label for="addressField1" class="form-label">Katuosoite</label>
+                <input type="text" class="form-control" id="addressField1" placeholder="Kirjoita osoite">
+            </div>
+            <div class="mb-3 w-50">
+                <label for="addressField2" class="form-label">Kaupunki</label>
+                <input type="text" class="form-control" id="addressField2" placeholder="Kirjoita kaupunki">
+            </div>
         </div>
         <button type="button" class="btn btn-success" onclick="search()">Search</button>
         <br><br>
