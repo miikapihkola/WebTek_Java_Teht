@@ -3,6 +3,7 @@ let totCount = 0;
 window.onload = function () {
     document.getElementById('Field1').value = getRandomIntInclusive(1, 10);
     document.getElementById('Field2').value = getRandomIntInclusive(1, 10);
+    update();
 }
 
 function f1neg() {
