@@ -30,26 +30,34 @@ function update() {
     Field1 = parseInt(document.getElementById('Field1').value);
     Field2 = parseInt(document.getElementById('Field2').value);
     output = 0;
+    func = '';
     operators = document.getElementById('func');
     switch (operators.options[operators.selectedIndex].text) {
         case '+':
             output = Field1 + Field2;
+            func = Field1 + ' + ' + Field2 + ' = ';
             break;
         case '-':
             output = Field1 - Field2;
+            func = Field1 + ' - ' + Field2 + ' = ';
             break;
         case '*':
             output = Field1 * Field2;
+            func = Field1 + ' * ' + Field2 + ' = ';
             break;
         case '/':
             output = Field1 / Field2;
+            func = Field1 + ' / ' + Field2 + ' = ';
             break;
         default:
             output = 'ERROR';
+            func = 'ERROR';
             break;
     }
-    document.getElementById('output1').value = output; // EI TOIMI
-    document.getElementById('totCount').value = 'laskutoimituksia: ' + totCount + ' kpl'; // EI TOIMI
+    document.getElementById('output2').innerHTML = func;
+    document.getElementById('output1').innerHTML = output;
+    document.getElementById('totCount').innerHTML = 'laskutoimituksia: ' + ++totCount + ' kpl';
+    document.getElementById('history').insertAdjacentHTML('afterend', func + output + '<br>');
 }
 
 function getRandomIntInclusive(min, max) {
