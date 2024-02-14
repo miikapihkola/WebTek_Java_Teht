@@ -1,3 +1,5 @@
+let totCount = 0;
+
 window.onload = function () {
     document.getElementById('Field1').value = getRandomIntInclusive(1, 10);
     document.getElementById('Field2').value = getRandomIntInclusive(1, 10);
@@ -25,7 +27,29 @@ function f2pos() {
 }
 
 function update() {
-
+    Field1 = parseInt(document.getElementById('Field1').value);
+    Field2 = parseInt(document.getElementById('Field2').value);
+    output = 0;
+    operators = document.getElementById('func');
+    switch (operators.options[operators.selectedIndex].text) {
+        case '+':
+            output = Field1 + Field2;
+            break;
+        case '-':
+            output = Field1 - Field2;
+            break;
+        case '*':
+            output = Field1 * Field2;
+            break;
+        case '/':
+            output = Field1 / Field2;
+            break;
+        default:
+            output = 'ERROR';
+            break;
+    }
+    document.getElementById('output1').value = output; // EI TOIMI
+    document.getElementById('totCount').value = 'laskutoimituksia: ' + totCount + ' kpl'; // EI TOIMI
 }
 
 function getRandomIntInclusive(min, max) {
