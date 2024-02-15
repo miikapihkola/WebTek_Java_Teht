@@ -1,6 +1,6 @@
 .containerjust {
     margin: auto;
-    width: 50%;
+    width: 33%;
 }
 
 .w100 {
@@ -9,4 +9,24 @@
     margin-bottom: 25px;
 }
 
-.btn-group {}
+.btnbar {
+    margin-bottom: 15px;
+}
+
+.picCont {
+    margin: 2%;
+    padding: 1%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bi {
+    color: black;
+}
+
+.pic {
+    border: 5px solid brown;
+    background-color: burlywood;
+    padding: 10px;
+    width: 100%;
+}
