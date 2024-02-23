@@ -11,16 +11,21 @@ window.onload = function () {
 }
 
 function prev() {
-    index = validIndex(--index);
-    updateInfo();
-    localStorage.setItem('index', index);
+    $("#picId").slideUp("slow", function () {
+        index = validIndex(--index);
+        updateInfo();
+        localStorage.setItem('index', index);
+    });
+    $("#picId").slideDown("slow", function () { });
 }
 
 function next() {
-    index = validIndex(++index);
-    updateInfo();
-    localStorage.setItem('index', index);
-
+    $("#picId").slideUp("slow", function () {
+        index = validIndex(++index);
+        updateInfo();
+        localStorage.setItem('index', index);
+    });
+    $("#picId").slideDown("slow", function () { });
 }
 
 function play() {
@@ -32,7 +37,7 @@ function play() {
     else {
         playing = true;
         document.getElementById('playbtn').className = "bi bi-pause-circle-fill";
-        playInterval = window.setInterval(next, 3000)
+        playInterval = window.setInterval(next, 6666)
     }
 }
 
