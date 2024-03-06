@@ -2,3 +2,18 @@
     margin: auto;
     width: 50%;
 }
+
+.spinni {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.jokeList {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.accColor {
+    background-color: bisque;
+}
