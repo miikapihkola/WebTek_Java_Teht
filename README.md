@@ -17,7 +17,7 @@ Kaikista tehtävistä on seuraavat tiedostot .html, .css ja .js
   - imagegallery<br>
     5. harjoitus, Näkymien vaihtaminen lista- ja ruudukkonäkymän välillä<br><br>
   - index<br>
-    1. harjoitus, Hello world<br><br>
+    1 harjoitus, Hello world<br><br>
   - jokes<br>
     6. harjoitus, Ajax-harjoitus<br><br>
   - map<br>
