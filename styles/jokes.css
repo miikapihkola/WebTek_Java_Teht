@@ -12,8 +12,24 @@
     background-color: bisque;
     padding: 20px;
     border-radius: 30px;
+    border-color: sandybrown;
+    border-style: solid;
+    border-width: 4px;
 }
 
 .accColor {
     background-color: bisque;
+}
+
+.accordion {
+    background-color: sandybrown;
+    padding: 3px;
+    padding-bottom: 1px;
+
+}
+
+.accordion-collapse,
+.accordion-header {
+    background-color: sandybrown;
+    padding-bottom: 3px;
 }
