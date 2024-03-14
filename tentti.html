@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="styles/tentti.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script defer src="scripts\tentti.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="containerjust">
+        <h4><br>Tilaa Pizza ennakkoon ja nouda</h4>
+        <div class="gridCont" id="picCont">
+
+            <div class="grid-item"><img src="images\Merirosvo.png" class="pic">
+                <div class="text-center maara-cont">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary" onclick="f1neg()">-</button>
+                        <div class="btn-group" role="group" style="width: auto">
+                            <div class="btn-group">
+                                <input disabled type="number" class="form-control" id="Field1" placeholder="Nro"
+                                    style="width: auto; text-align: center;">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="f1pos()">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <ul class="list-item">
+                    <h6>Valitse Pizza<br></h6>
+                    <select class="form-select" style="width: 130px;" id="pizza" onclick="update()"
+                        aria-label="Default select example">
+                        <option selected value="1">Tropicana</option>
+                        <option value="2">Perfetta</option>
+                        <option value="3">Pepperoni</option>
+                    </select>
+                </ul>
+                <ul class="list-item">
+                    <h6>Extrat</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" onclick="valkosipulif()" value="0"
+                            id="valkosipuli">
+                        <label class="form-check-label" for="valkosipuli">
+                            Valkosipuli
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" onclick="oreganof()" value="0" id="oregano">
+                        <label class="form-check-label" for="oregano">
+                            Oregano
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" onclick="aurajuustof()" value="0"
+                            id="aurajuusto">
+                        <label class="form-check-label" for="aurajuusto">
+                            Aurajuusto
+                        </label>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" onclick="kantaf()" role="switch" id="kanta">
+                        <label class="form-check-label" for="kanta">Kanta-asiakas</label>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="grid-item">
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <div class="btn-group" role="group" style="width: auto">
+                                <div class="btn-group">
+                                    <input disabled type="number" class="form-control" id="Field2" placeholder="Price"
+                                        style="width: auto; text-align: center;">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" disabled>€</button>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="grid-item"><button type="button" class="btn btn-success" onclick="order()">
+                            <h5>Tilaa</h5>
+                        </button></div>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

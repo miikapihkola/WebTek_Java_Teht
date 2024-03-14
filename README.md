@@ -22,3 +22,5 @@ Kaikista tehtävistä on seuraavat tiedostot .html, .css ja .js
     6. harjoitus, Ajax-harjoitus<br><br>
   - map<br>
     2. harjoitus, Näytä osoite kartalla<br><br>
+  - tentti<br>
+    2. tentti<br><br>
